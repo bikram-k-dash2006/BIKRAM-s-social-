@@ -34,7 +34,7 @@ Feel free to fork this repository, create a new branch, and make changes. If you
 
 ## **🔗 Links**
 
-- **GitHub Repository:** [https://github.com/your-username/BIKRAM-s-social-](https://github.com/your-username/BIKRAM-s-social-)
+- **GitHub Repository:** [https://github.com/BIKRAM-s-social-](https://github.com/bikram-k-dash2006)
 - **LinkedIn:** https://www.linkedin.com/in/bikram-k-dash-523536320
 - **Twitter:** https://twitter.com/Bikram_k_dash26
 
