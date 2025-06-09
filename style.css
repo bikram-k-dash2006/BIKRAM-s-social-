@@ -1,0 +1,138 @@
+/* General Body Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: url("assets/pic5.jpg") no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    animation: backgroundMove 30s infinite alternate ease-in-out;
+    overflow: hidden; /* Prevent scrollbars from appearing due to animation */
+}
+
+/* Background Image Animation */
+@keyframes backgroundMove {
+    0% {
+        background-position: center top;
+    }
+    50% {
+        background-position: center center;
+    }
+    100% {
+        background-position: center bottom;
+    }
+}
+
+/* Container Styles */
+.container {
+    background: rgba(0, 0, 0, 0.85); /* Darker overlay for better contrast */
+    border-radius: 15px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px); /* Subtle hover effect */
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.9); /* More pronounced shadow on hover */
+}
+
+/* Profile Picture Styles */
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #000000; /* Match brand color */
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 6px 15px rgba(0, 97, 243, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.15); /* Slight zoom effect */
+    box-shadow: 0 8px 20px rgba(235, 0, 0, 0.6);
+}
+
+/* Heading Styles */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+    color: #6c27ec; /* Purple accent color */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: fadeIn 2s ease-out;
+}
+
+/* Links Styles */
+.links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.links li {
+    margin: 0.8rem 0;
+}
+
+.links a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(45deg, #6c27ec, #00c6ff); /* Modern gradient button */
+    padding: 0.8rem 1rem;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.links a:hover {
+    transform: scale(1.1); /* Subtle scaling on hover */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Link Icon Styles */
+.links img.icon {
+    width: 24px;
+    height: 24px;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+/* Footer Styles */
+footer {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+    animation: fadeIn 2s ease-out;
+}
+
+footer a {
+    color: #00c6ff; /* Accent color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #6c27ec; /* Match brand color */
+    text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

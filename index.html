@@ -1,137 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bikram's Social</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background: url("assets/pic5.jpg") no-repeat center center/cover;
-            height: 180vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #fff;
-        }
-
-        .container {
-            background: rgba(0, 0, 0, 0.6);
-            border-radius: 15px;
-            padding: 2rem;
-            text-align: center;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-        }
-
-        .profile-pic {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 4px solid #000000;
-            object-fit: cover;
-            margin-bottom: 1.5rem;
-            transform: scale(1.1);
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
-        }
-
-        h1 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-            color: #6c27ec;
-        }
-
-        .links {
-            list-style: none;
-            padding: 0;
-        }
-
-        .links li {
-            margin: 1rem 0;
-        }
-
-        .links a {
-            text-decoration: none;
-            font-size: 1.2rem;
-            font-weight: bold;
-            color: #fff;
-            background: linear-gradient(45deg, #007bff, #00c6ff);
-            padding: 0.8rem 2rem;
-            border-radius: 30px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 1rem;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .links a:hover {
-            transform: scale(1.1);
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
-        }
-
-        .links img.icon {
-            width: 24px;
-            height: 24px;
-        }
-
-        footer {
-            margin-top: 2rem;
-            font-size: 0.9rem;
-            color: rgba(255, 255, 255, 0.8);
-        }
-
-        footer a {
-            color: #00c6ff;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon.png" type="image/x-icon"><!--Favicon-->
 </head>
-
 <body>
     <main class="container">
         <section class="profile-section">
             <img src="assets/pic8.jpg" alt="Your Profile Picture" class="profile-pic">
             <h1>Bikram Keshari Dash</h1>
         </section>
-        
         <nav>
             <ul class="links">
                 <li>
-                    <a href="https://www.instagram.com/teslachronical599?igsh=MWJtYjUwaDlhNDN3Nw==&utm_source=ig_contact_invite"
-                        target="_blank">
-                        <img src="assets/pic111.jpg" alt="Instagram Logo" class="icon"> Instagram
+                    <a href="https://www.instagram.com/teslachronical599"target="_blank">
+                        <img src="assets/insta.png" alt="Instagram Logo" class="icon"> Instagram
                     </a>
                 </li>
                 <li>
-                    <a href="https://x.com/Bikram_k_dash26?t=_C1h64MTAjoJw7EyNiJkVQ&s=09" target="_blank">
-                        <img src="assets/pic9.jpg" alt="X Logo" class="icon"> X
+                    <a href="https://x.com/Bikram_k_dash26" target="_blank">
+                        <img src="assets/x.jpg" alt="X Logo" class="icon"> X
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com/in/bikram-k-dash-523536320?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    <a href="https://www.linkedin.com/in/bikram-k-dash-523536320"
                         target="_blank">
-                        <img src="assets/pic11.jpg" alt="Linkedin Logo" class="icon"> Linkedin
+                        <img src="assets/linkedin.png" alt="Linkedin Logo" class="icon"> Linkedin
                     </a>
                 </li>
                 <li>
                     <a href="https://github.com/bikram-k-dash2006" target="_blank">
-                        <img src="assets/pic122.jpg" alt="GitHub Logo" class="icon"> GitHub
+                        <img src="assets/github.png" alt="GitHub Logo" class="icon"> GitHub
                     </a>
                 </li>
             </ul>
         </nav>
-
         <footer>
-            <p>&copy; All rights reserved. <a href="https://github.com/bikram-k-dash2006" target="_blank">Bikram K. Dash</a></p>
+            <p>&copy; <span id="currentYear"></span> All rights reserved by <a href="https://github.com/bikram-k-dash2006" target="_blank">Bikram K. Dash</a></p>
         </footer>
     </main>
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
 </body>
-
 </html>
